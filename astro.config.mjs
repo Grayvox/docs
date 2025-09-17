@@ -23,15 +23,17 @@ export default defineConfig({
 			sidebar: [
 				{ 
 					label: 'README', 
-					link: '/readme' 
+					link: '/readme'
 				},
 				{
 					label: 'Journalore',
 					autogenerate: { directory: 'journalore' },
+					collapsed: true
 				},
 				{
 					label: 'Supernovel',
 					autogenerate: { directory: 'supernovel' },
+					collapsed: true
 				},
 				{
 					label: 'Obsidian Plugins',
@@ -39,9 +41,11 @@ export default defineConfig({
 						'readme',
 						{
 							label: 'Character Sheets',
-							autogenerate: { directory: 'obsidian-plugins/character-sheets' }
+							autogenerate: { directory: 'obsidian-plugins/character-sheets' },
+							collapsed: true
 						}
 					],
+					collapsed: true
 				},
 			],
 			plugins: [
