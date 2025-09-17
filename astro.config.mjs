@@ -1,26 +1,41 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import catppuccin from '@catppuccin/starlight'
 
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Graydocs',
+			social: [
+				{ 
+					icon: 'github', 
+					label: 'GitHub', 
+					href: 'https://github.com/Grayvox/docs' 
+				},
+				{ 
+					icon: 'document', 
+					label: 'Main Website', 
+					href: 'https://grayvox.com' 
+				},
+			],
 			sidebar: [
 				{
 					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					autogenerate: { directory: 'guides' },
 				},
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
 			],
+			plugins: [
+        		catppuccin({
+					dark: { flavor: "mocha", accent: "blue" },
+					light: { flavor: "latte", accent: "lavender" }
+				})
+      		]
 		}),
 	],
 });
