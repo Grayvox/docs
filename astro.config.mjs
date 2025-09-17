@@ -35,7 +35,13 @@ export default defineConfig({
 				},
 				{
 					label: 'Obsidian Plugins',
-					autogenerate: { directory: 'obsidian-plugins' },
+					items: [
+						'readme',
+						{
+							label: 'Character Sheets',
+							autogenerate: { directory: 'obsidian-plugins/character-sheets' }
+						}
+					],
 				},
 			],
 			plugins: [
