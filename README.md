@@ -1,49 +1,17 @@
-# Starlight Starter Kit: Basics
+# The Graydocs
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+Personal project docs site for stuff made by yours truly.
 
-```
-bun create astro@latest -- --template starlight
-```
+## What kind of projects are hosted here?
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Yes.
 
-## 🚀 Project Structure
+...All of them, in some capacity. If a project's documentation I make is moved elsewhere it's because I either felt it needed a more uniquely branded site, or because the project is large scale enough it just makes more sense. Regardless, any project I make has at least one README file on here, and will provide a link to it's specific docs if it has them elsewhere.
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+## What's this made of?
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
-
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
-
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
-
-Static assets, like favicons, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+Just a few simple ingredients:
+- Astro (SSG)
+- Starlight (Docs theme for Astro)
+- Catppuccin Theme for Starlight (running Mocha palette for dark mode and Latte for light mode)
+- Bun (of course)
