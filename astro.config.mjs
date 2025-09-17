@@ -21,13 +21,21 @@ export default defineConfig({
 				},
 			],
 			sidebar: [
-				{
-					label: 'Guides',
-					autogenerate: { directory: 'guides' },
+				{ 
+					label: 'README', 
+					link: '/readme' 
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Journalore',
+					autogenerate: { directory: 'journalore' },
+				},
+				{
+					label: 'Supernovel',
+					autogenerate: { directory: 'supernovel' },
+				},
+				{
+					label: 'Obsidian Plugins',
+					autogenerate: { directory: 'obsidian-plugins' },
 				},
 			],
 			plugins: [

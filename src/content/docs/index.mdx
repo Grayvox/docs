@@ -1,17 +1,17 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: The Graydocs
+description: Personal project docs site for stuff made by yours truly.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Personal project docs site for stuff made by yours truly.
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/GrayvoxVisor.png
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Read The Docs
+      link: /readme
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: Back to Main Website
+      link: https://grayvox.com
       icon: external
       variant: minimal
 ---
@@ -21,16 +21,19 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 ## Next steps
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+	<a style="text-decoration: none; color: #cdd6f4" href="/journalore/readme">
+		<Card title="Journalore" icon="pencil">
+			Edit `src/content/docs/index.mdx` to see this page change.
+		</Card>
+	</a>
+	<a style="text-decoration: none; color: #cdd6f4" href="/supernovel/readme">
+		<Card title="Supernovel" icon="open-book">
+			Add Markdown or MDX files to `src/content/docs` to create new pages.
+		</Card>
+	</a>
+	<a style="text-decoration: none; color: #cdd6f4" href="/obsidian-plugins/readme">
+		<Card title="Obsidian Plugins" icon="seti:json">
+			Edit your `sidebar` and other config in `astro.config.mjs`.
+		</Card>
+	</a>
 </CardGrid>
